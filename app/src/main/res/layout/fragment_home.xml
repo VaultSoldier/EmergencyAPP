@@ -11,8 +11,8 @@
 
     <Button
         android:id="@+id/buttonFire"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
         android:text="Button" />
 
     <Button
@@ -32,4 +32,10 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Button3" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/matt-howard-fire"/>
 </LinearLayout>
