@@ -6,4 +6,6 @@
     <string name="numbers_police_info">102</string>
     <string name="numbers_med">скорая помощь</string>
     <string name="numbers_med_info">103</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

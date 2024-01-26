@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.EmergencyAPP" parent="Base.Theme.EmergencyAPP" />
+
 </resources>
