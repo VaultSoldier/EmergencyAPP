@@ -29,14 +29,26 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun replaceFragment(fragment: Fragment){
+    private fun replaceFragment(fragment: Fragment) {
 
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frame_layout,fragment)
-        fragmentTransaction.addToBackStack(null)
-        fragmentTransaction.commit()
+        val currentFragment = fragmentManager.findFragmentById(R.id.frame_layout)
 
+        if (fragmentManager.backStackEntryCount >= 1 && fragment is HomeFragment) {
+            fragmentManager.popBackStack()
+            println("restore")
+        } else if (currentFragment is CallsFragment) {
+            println("skip")
+        } else if (fragment is CallsFragment) {
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.replace(R.id.frame_layout, fragment)
+            fragmentTransaction.commit()
+            println("save")
+        } else {
+            fragmentTransaction.replace(R.id.frame_layout, fragment)
+            fragmentTransaction.commit()
+            println("init")
+        }
     }
-
 }
