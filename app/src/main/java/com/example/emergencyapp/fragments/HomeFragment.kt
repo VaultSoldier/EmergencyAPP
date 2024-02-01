@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
         val fireFrag = FireFragment()
 
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.frame_layout, fireFrag)
+        transaction.replace(R.id.container, fireFrag)
         transaction.addToBackStack(null) // Optional: Add the transaction to the back stack
         transaction.commit()
     }
@@ -43,7 +43,7 @@ class HomeFragment : Fragment() {
         val openButton1 = Button1Fragment()
 
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.frame_layout, openButton1)
+        transaction.replace(R.id.container, openButton1)
         transaction.addToBackStack(null) // Optional: Add the transaction to the back stack
         transaction.commit()
     }

@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(HomeFragment())
 
-        binding.bottomNavigationView.setOnItemSelectedListener {
+        binding.bottomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> replaceFragment(HomeFragment())
                 R.id.numbers -> replaceFragment(CallsFragment())
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        val currentFragment = fragmentManager.findFragmentById(R.id.frame_layout)
+        val currentFragment = fragmentManager.findFragmentById(R.id.container)
 
         if (fragmentManager.backStackEntryCount >= 1 && fragment is HomeFragment) {
             fragmentManager.popBackStack()
@@ -39,11 +39,11 @@ class MainActivity : AppCompatActivity() {
             println("skip")
         } else if (fragment is CallsFragment) {
             fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.replace(R.id.frame_layout, fragment)
+            fragmentTransaction.replace(R.id.container, fragment)
             fragmentTransaction.commit()
             println("save")
         } else {
-            fragmentTransaction.replace(R.id.frame_layout, fragment)
+            fragmentTransaction.replace(R.id.container, fragment)
             fragmentTransaction.commit()
             println("init")
         }
