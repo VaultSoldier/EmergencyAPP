@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import com.example.emergencyapp.databinding.ActivityMainBinding
 import com.example.emergencyapp.fragments.CallsFragment
 import com.example.emergencyapp.fragments.HomeFragment
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -17,12 +16,10 @@ class MainActivity : AppCompatActivity() {
         replaceFragment(HomeFragment())
 
         binding.bottomNavigationView.setOnItemSelectedListener {
-
-            when(it.itemId){
+            when (it.itemId) {
                 R.id.home -> replaceFragment(HomeFragment())
                 R.id.numbers -> replaceFragment(CallsFragment())
-
-                else ->{
+                else -> {
                 }
             }
             true
