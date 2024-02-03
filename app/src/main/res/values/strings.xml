@@ -1,9 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EMergencyApp</string>
+    <string name="app_name">Emergency App</string>
     <string name="numbers_firefighters">пожарные</string>
     <string name="numbers_firefighters_info">101</string>
     <string name="numbers_police">полиция</string>
     <string name="numbers_police_info">102</string>
     <string name="numbers_med">скорая помощь</string>
     <string name="numbers_med_info">103</string>
+    <string name="h1">Чрезвычайные ситуации и их классификация</string>
+    <string name="h1_text">Чрезвычайная ситуация — обстановка на определенной территории,
+    сложившаяся в результате аварии, катастрофы, опасного природного
+    явления, ведения боевых действий или террористического акта или
+    вследствие этих действий и актов, или иного бедствия, которая может
+    повлечь или повлекла за собой человеческие жертвы среди населения, ущерб
+    здоровью людей или окружающей среде, значительные материальные потери
+    и нарушение условий жизнедеятельности людей
+    </string>
 </resources>

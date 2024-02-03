@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.CallsFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="400sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/firefightersTEXTBOX"
@@ -29,6 +31,7 @@
             android:id="@+id/firefightersINFO"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="45sp"
             android:background="#E91E63"
             android:backgroundTint="#991D47"
             android:text="@string/numbers_firefighters_info"
@@ -42,9 +45,9 @@
             android:id="@+id/policeTEXTBOX"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="100sp"
             android:background="#0B6572"
-            android:backgroundTint="#00B0CA"
+            android:backgroundTint="#009DB5"
             android:text="@string/numbers_police"
             android:textAlignment="center"
             android:textAllCaps="true"
@@ -56,9 +59,9 @@
             android:id="@+id/policeINFO"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="145sp"
             android:background="#0B6572"
-            android:backgroundTint="#009DB5"
+            android:backgroundTint="#00B0CA"
             android:text="@string/numbers_police_info"
             android:textAlignment="center"
             android:textAllCaps="true"
@@ -70,6 +73,7 @@
             android:id="@+id/medTEXTBOX"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="200sp"
             android:background="#EF6C00"
             android:backgroundTint="#C15B08"
             android:text="@string/numbers_med"
@@ -83,6 +87,7 @@
             android:id="@+id/medINFO"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="245sp"
             android:background="#EF6C00"
             android:backgroundTint="#D06208"
             android:text="@string/numbers_med_info"
@@ -91,6 +96,6 @@
             android:textColor="#FFFFFF"
             android:textSize="34sp"
             android:textStyle="bold" />
+    </FrameLayout>
 
-    </LinearLayout>
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

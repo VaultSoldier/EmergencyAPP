@@ -11,21 +11,17 @@ import androidx.recyclerview.widget.RecyclerView
 class ViewPagerAdapter(
     private var title: List<String>,private var details: List<String>,private var images: List<Int>
     ) : RecyclerView.Adapter<ViewPagerAdapter.Pager2ViewHolder>() {
-
     inner class Pager2ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var itemTitle: TextView = itemView.findViewById(R.id.fireTitle_1)
         var itemDetails: TextView = itemView.findViewById(R.id.fireAbout_1)
         var itemImage: ImageView = itemView.findViewById(R.id.fireImage_1)
 
         init {
-
             itemImage.setOnClickListener { v: View ->
-
                 val position = adapterPosition
                 Toast.makeText(
                     itemView.context,"You clicked #${position + 1}",Toast.LENGTH_SHORT
                 ).show()
-
             }
         }
     }
@@ -45,11 +41,12 @@ class ViewPagerAdapter(
         return title.size
     }
 
-    override fun onBindViewHolder(holder: ViewPagerAdapter.Pager2ViewHolder, position: Int) {
-
+    override fun onBindViewHolder(
+        holder: ViewPagerAdapter.Pager2ViewHolder,
+        position: Int
+    ) {
         holder.itemTitle.text = title[position]
         holder.itemDetails.text = details[position]
         holder.itemImage.setImageResource(images[position])
     }
-
 }

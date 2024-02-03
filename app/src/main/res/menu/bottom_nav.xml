@@ -4,9 +4,9 @@
     <item
         android:icon="@drawable/baseline_article_24"
         android:id="@+id/home"
-        android:title="Home" />
+        android:title="" />
     <item
-        android:icon="@drawable/baseline_add_call_24"
         android:id="@+id/numbers"
-        android:title="Numbers" />
+        android:icon="@drawable/phone_log"
+        android:title="" />
 </menu>

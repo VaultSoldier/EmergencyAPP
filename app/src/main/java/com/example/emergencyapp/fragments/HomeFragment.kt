@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun openFireFragment() {
-        val fireFrag = FireFragment()
+        val fireFrag = DefinitionsFragment()
 
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container, fireFrag)
