@@ -49,18 +49,25 @@ class DefinitionsFragment : Fragment() {
         val titleOne = getString(R.string.h1)
         val textOne = getString(R.string.h1_text)
 
+        val titleTwo = getString(R.string.h2)
+        val textTwo = getString(R.string.h2_text)
+        val textTwoOne = getString(R.string.h2_1_text)
+        val textTwoTwo = getString(R.string.h2_2_text)
+
         titlesList.add(titleOne)
         descList.add(textOne)
         imagesList.add(R.drawable.siren)
 
-        titlesList.add("Хааай")
-        descList.add("Description")
-        imagesList.add(R.mipmap.ic_launcher_round)
+        titlesList.add(titleTwo)
+        descList.add(textTwo)
+        imagesList.add(R.drawable.emergency)
 
-//        for (i in 1..5) {
-//            titlesList.add("Title $i")
-//            descList.add("Description $i")
-//            imagesList.add(R.mipmap.ic_launcher_round)
-//        }
+        titlesList.add(titleTwo)
+        descList.add(textTwoOne)
+        imagesList.add(R.drawable.emergency)
+
+        titlesList.add(titleTwo)
+        descList.add(textTwoTwo)
+        imagesList.add(R.drawable.emergency)
     }
 }
