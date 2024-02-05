@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Emergency App</string>
+    <string name="button_1">Чрезвычайные ситуации и их классификация</string>
     <string name="numbers_firefighters">пожарные</string>
     <string name="numbers_firefighters_info">101</string>
     <string name="numbers_police">полиция</string>

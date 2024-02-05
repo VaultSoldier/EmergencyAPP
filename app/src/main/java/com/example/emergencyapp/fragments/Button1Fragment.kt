@@ -47,10 +47,6 @@ class Button1Fragment : Fragment() {
         descList.add(textOne)
         imagesList.add(R.drawable.siren)
 
-        titlesList.add("Хааdaай")
-        descList.add("Description")
-        imagesList.add(R.mipmap.ic_launcher_round)
-
     }
 
 }

@@ -1,24 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linear_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".fragments.HomeFragment" >
 
-    <Button
-        android:id="@+id/buttonFire"
-        android:layout_width="350dp"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_gravity="center" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="Button1" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:clickable="true"
+            app:cardCornerRadius="10sp"
+            app:layout_constraintVertical_chainStyle="packed">
 
-</LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="170sp"
+                android:background="@color/white"
+                android:foreground="@drawable/dark_overlay"
+                android:scaleType="centerCrop"
+                android:src="@drawable/button_em_pic"
+                android:contentDescription="@string/button_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="2sp"
+                android:fontFamily="@font/motiva_sans_black"
+                android:text="@string/button_1"
+                android:layout_marginStart="4sp"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginTop="180sp"
+            app:cardCornerRadius="10sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="170sp"
+                android:background="@color/white"
+                android:foreground="@drawable/dark_overlay"
+                android:scaleType="centerCrop"
+                android:src="@drawable/button_em_pic" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</ScrollView>

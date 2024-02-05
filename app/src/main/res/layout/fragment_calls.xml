@@ -7,7 +7,7 @@
     tools:context=".fragments.CallsFragment">
 
     <FrameLayout
-        android:layout_width="400sp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -58,6 +58,7 @@ class DefinitionsFragment : Fragment() {
         descList.add(textOne)
         imagesList.add(R.drawable.siren)
 
+
         titlesList.add(titleTwo)
         descList.add(textTwo)
         imagesList.add(R.drawable.emergency)

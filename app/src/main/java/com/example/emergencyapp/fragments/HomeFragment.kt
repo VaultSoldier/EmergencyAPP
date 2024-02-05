@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.example.emergencyapp.R
 
@@ -16,13 +16,13 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val button: Button = view.findViewById(R.id.buttonFire)
+        val button: CardView = view.findViewById(R.id.buttonFire)
         button.setOnClickListener {
             // Call a function to open Fragment
             openFireFragment()
         }
 
-        val button1: Button = view.findViewById(R.id.button1)
+        val button1: CardView = view.findViewById(R.id.button_1)
         button1.setOnClickListener {
             button1()
         }
