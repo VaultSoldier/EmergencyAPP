@@ -40,12 +40,12 @@ class Button1Fragment : Fragment() {
     }
 
     private fun addDataToList() {
-        val titleOne = getString(R.string.h1)
-        val textOne = getString(R.string.h1_text)
+        val titleOne = getString(R.string.h2)
+        val textOne = getString(R.string.h2_text)
 
         titlesList.add(titleOne)
         descList.add(textOne)
-        imagesList.add(R.drawable.siren)
+        imagesList.add(R.drawable.first_aid1_1)
 
     }
 

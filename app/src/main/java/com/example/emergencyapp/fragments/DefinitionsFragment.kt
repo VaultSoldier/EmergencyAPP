@@ -47,12 +47,12 @@ class DefinitionsFragment : Fragment() {
     private fun addDataToList() {
 
         val titleOne = getString(R.string.h1)
-        val textOne = getString(R.string.h1_text)
+        val textOne = getString(R.string.h1Text)
 
-        val titleTwo = getString(R.string.h2)
-        val textTwo = getString(R.string.h2_text)
-        val textTwoOne = getString(R.string.h2_1_text)
-        val textTwoTwo = getString(R.string.h2_2_text)
+        val titleTwo = getString(R.string.h1_1)
+        val textTwo = getString(R.string.h1_2Text)
+        val textTwoOne = getString(R.string.h1_3Text)
+        val textTwoTwo = getString(R.string.h1_4Text)
 
         titlesList.add(titleOne)
         descList.add(textOne)
