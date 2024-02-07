@@ -14,10 +14,10 @@ class SimpleFragmentPagerAdapter(fragmentManager: FragmentManager, lifecycle: Li
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            0 -> CallsFragment()
-            1 -> CallsFragment()
-            2 -> CallsFragment()
-            else -> CallsFragment()
+            0 -> Tab1Fragment()
+            1 -> Tab2Fragment()
+            2 -> Tab3Fragment()
+            else -> Tab1Fragment()
         }
     }
 }
