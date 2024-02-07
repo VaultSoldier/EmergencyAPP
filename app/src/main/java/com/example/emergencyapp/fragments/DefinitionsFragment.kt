@@ -20,7 +20,7 @@ class DefinitionsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.fragment_swipe_view, container, false)
+        val rootView = inflater.inflate(R.layout.fragment_definitions, container, false)
 
         // Initialize your lists and populate them
         titlesList = mutableListOf()

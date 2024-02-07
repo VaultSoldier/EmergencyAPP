@@ -1,53 +1,45 @@
 package com.example.emergencyapp.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.emergencyapp.R
-import com.example.emergencyapp.ViewPagerAdapter
-import me.relex.circleindicator.CircleIndicator3
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class Button1Fragment : Fragment() {
-
-    private lateinit var titlesList: MutableList<String>
-    private lateinit var descList: MutableList<String>
-    private lateinit var imagesList: MutableList<Int>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.fragment_swipe_view, container, false)
-
-        titlesList = mutableListOf()
-        descList = mutableListOf()
-        imagesList = mutableListOf()
-
-        addDataToList()
-
-        val viewPager2: ViewPager2 = rootView.findViewById(R.id.view_pager2)
-        val indicator: CircleIndicator3 = rootView.findViewById(R.id.indicator)
-
-        viewPager2.adapter = ViewPagerAdapter(titlesList, descList, imagesList)
-        viewPager2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-
-        indicator.setViewPager(viewPager2)
-
-        return rootView
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_button1, container, false)
     }
 
-    private fun addDataToList() {
-        val titleOne = getString(R.string.h2)
-        val textOne = getString(R.string.h2_text)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        titlesList.add(titleOne)
-        descList.add(textOne)
-        imagesList.add(R.drawable.first_aid1_1)
+        // Find ViewPager2 and TabLayout
+        val viewPager2: ViewPager2 = view.findViewById(R.id.view_pager2_1)
+        val tabLayout: TabLayout = view.findViewById(R.id.tabs)
 
+        // Set up the adapter for ViewPager2
+        val adapter = SimpleFragmentPagerAdapter(childFragmentManager, lifecycle) // Added lifecycle parameter
+        viewPager2.adapter = adapter
+
+        // Connect ViewPager2 to TabLayout
+        TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
+            when (position) {
+                0 -> tab.text = "первая мед. помощь"
+                1 -> tab.text = "Contacts"
+                2 -> tab.text = "Messages"
+                else -> tab.text = "Tab $position" // Handle additional positions if needed
+            }
+        }.attach()
     }
-
 }
 
