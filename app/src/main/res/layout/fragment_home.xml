@@ -31,7 +31,7 @@
                 android:contentDescription="@string/button_1"
                 android:foreground="@drawable/dark_overlay"
                 android:scaleType="centerCrop"
-                android:src="@drawable/button_first_aid" />
+                android:src="@raw/button_first_aid" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                 android:foreground="@drawable/dark_overlay"
                 android:scaleType="centerCrop"
                 android:contentDescription="@null"
-                android:src="@drawable/button_first_aid1" />
+                android:src="@raw/button_first_aid1" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                 android:foreground="@drawable/dark_overlay"
                 android:scaleType="centerCrop"
                 android:contentDescription="@null"
-                android:src="@drawable/button_first_aid2" />
+                android:src="@raw/button_first_aid2" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -114,14 +114,14 @@
                 android:foreground="@drawable/dark_overlay"
                 android:scaleType="centerCrop"
                 android:contentDescription="@null"
-                android:src="@drawable/button_first_aid3" />
+                android:src="@raw/button_first_aid3" />
             <TextView
                 android:layout_width="390sp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|start"
                 android:layout_marginStart="8sp"
                 android:fontFamily="@font/motiva_sans_black"
-                android:text="@string/button_4"
+                android:text="@string/button_3"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
         </androidx.cardview.widget.CardView>

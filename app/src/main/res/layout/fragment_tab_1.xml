@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_1" />
+            android:src="@raw/first_aid1_1" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_2" />
+            android:src="@raw/first_aid1_2" />
 
         <TextView
             android:layout_width="match_parent"
@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_3" />
+            android:src="@raw/first_aid1_3" />
 
         <TextView
             android:layout_width="match_parent"
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_4" />
+            android:src="@raw/first_aid1_4" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_5" />
+            android:src="@raw/first_aid1_5" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_6" />
+            android:src="@raw/first_aid1_6" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_7" />
+            android:src="@raw/first_aid1_7" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_8" />
+            android:src="@raw/first_aid1_8" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_9" />
+            android:src="@raw/first_aid1_9" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -188,7 +188,7 @@
             android:layout_width="match_parent"
             android:layout_height="130sp"
             android:importantForAccessibility="no"
-            android:src="@drawable/first_aid1_10" />
+            android:src="@raw/first_aid1_10" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

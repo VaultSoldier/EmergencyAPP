@@ -56,19 +56,19 @@ class DefinitionsFragment : Fragment() {
 
         titlesList.add(titleOne)
         descList.add(textOne)
-        imagesList.add(R.drawable.siren)
+        imagesList.add(R.raw.view1_siren)
 
 
         titlesList.add(titleTwo)
         descList.add(textTwo)
-        imagesList.add(R.drawable.emergency)
+        imagesList.add(R.raw.view1_emergency)
 
         titlesList.add(titleTwo)
         descList.add(textTwoOne)
-        imagesList.add(R.drawable.emergency)
+        imagesList.add(R.raw.view1_bomb)
 
         titlesList.add(titleTwo)
         descList.add(textTwoTwo)
-        imagesList.add(R.drawable.emergency)
+        imagesList.add(R.raw.view1_planet_earth)
     }
 }
