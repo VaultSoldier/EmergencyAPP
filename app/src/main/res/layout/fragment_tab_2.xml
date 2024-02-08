@@ -1,8 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/bg_color"
     tools:context=".fragments.Tab2Fragment">
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="12sp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/h3"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12sp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/h3_h1"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/first_aid2_1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/h3_1_text"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:layout_marginBottom="4sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/first_aid2_2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/h3_2_text"
+            android:layout_marginTop="4sp"
+            android:layout_marginBottom="4sp"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/first_aid2_3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/h3_3_text"
+            android:layout_marginTop="4sp"
+            android:layout_marginBottom="4sp"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8sp"
+          android:layout_marginBottom="12sp"
+          android:fontFamily="sans-serif-black"
+          android:text="@string/h3_h2"
+          android:textAlignment="textStart"
+          android:textColor="#FFFFFF"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="sans-serif-medium"
+          android:text="@string/h3_text"
+          android:textAlignment="center"
+          android:textColor="#FFFFFF"
+          android:textSize="20sp"
+          android:layout_marginBottom="4sp"/>
+
+        <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="130sp"
+          android:importantForAccessibility="no"
+          android:src="@drawable/first_aid2_4" />
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="sans-serif-medium"
+          android:text="@string/h3_4_text"
+          android:layout_marginTop="4sp"
+          android:layout_marginBottom="4sp"
+          android:textAlignment="textStart"
+          android:textColor="#FFFFFF"
+          android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/first_aid2_5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/h3_5_text"
+            android:layout_marginTop="4sp"
+            android:layout_marginBottom="4sp"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/first_aid2_6" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/h3_6_text"
+            android:layout_marginTop="4sp"
+            android:layout_marginBottom="4sp"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+</ScrollView>

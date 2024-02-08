@@ -34,8 +34,8 @@ class Button1Fragment : Fragment() {
         // Connect ViewPager2 to TabLayout
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             when (position) {
-                0 -> tab.text = "первая мед. помощь"
-                1 -> tab.text = "Contacts"
+                0 -> tab.text = "ПМП"
+                1 -> tab.text = "СЛР"
                 2 -> tab.text = "Messages"
                 else -> tab.text = "Tab $position" // Handle additional positions if needed
             }

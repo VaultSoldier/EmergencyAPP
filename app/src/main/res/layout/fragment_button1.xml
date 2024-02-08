@@ -15,6 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0E2211DD"
-        app:tabTextColor="#C0C0C0"
-        />
+        android:contentDescription="@string/app_name"
+        app:tabTextColor="#C0C0C0" />
 </RelativeLayout>
