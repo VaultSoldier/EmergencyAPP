@@ -9,7 +9,7 @@ class SimpleFragmentPagerAdapter(fragmentManager: FragmentManager, lifecycle: Li
     FragmentStateAdapter(fragmentManager, lifecycle) {
 
     override fun getItemCount(): Int {
-        return 3
+        return 7
     }
 
     override fun createFragment(position: Int): Fragment {
@@ -17,6 +17,10 @@ class SimpleFragmentPagerAdapter(fragmentManager: FragmentManager, lifecycle: Li
             0 -> Tab1Fragment()
             1 -> Tab2Fragment()
             2 -> Tab3Fragment()
+            3 -> Tab4Fragment()
+            4 -> Tab4Fragment()
+            5 -> Tab4Fragment()
+            6 -> Tab4Fragment()
             else -> Tab1Fragment()
         }
     }

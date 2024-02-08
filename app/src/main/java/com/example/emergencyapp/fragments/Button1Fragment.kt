@@ -37,6 +37,7 @@ class Button1Fragment : Fragment() {
                 0 -> tab.text = "ПМП"
                 1 -> tab.text = "СЛР"
                 2 -> tab.text = "ЗМС"
+                3 -> tab.text = "ПМГ"
                 else -> tab.text = "Tab $position" // Handle additional positions if needed
             }
         }.attach()
