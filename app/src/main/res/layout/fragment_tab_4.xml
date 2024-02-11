@@ -27,7 +27,7 @@
                 android:text="@string/h5"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
@@ -112,7 +112,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardCornerRadius="0sp"
+            app:cardCornerRadius="10sp"
             app:cardBackgroundColor="#252525"
             android:layout_gravity="center">
 
@@ -120,8 +120,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:paddingStart="5sp"
-                android:paddingEnd="5sp"
+                android:paddingVertical="5sp"
+                android:layout_marginHorizontal="14sp"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/h5_important"
                 android:textColor="@color/white"

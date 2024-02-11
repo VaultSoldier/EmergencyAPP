@@ -22,7 +22,7 @@
             android:text="@string/h2"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="28sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
         <TextView
             android:layout_width="match_parent"

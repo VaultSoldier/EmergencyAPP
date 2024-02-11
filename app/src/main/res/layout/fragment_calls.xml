@@ -1,101 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.CallsFragment">
+    tools:context=".fragments.CallsFragment"
+    android:layout_marginVertical="5sp" >
 
-    <FrameLayout
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/firefightersTEXTBOX"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#E91E63"
-            android:backgroundTint="#8E1A41"
-            android:text="@string/numbers_firefighters"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/firefightersINFO"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="45sp"
-            android:background="#E91E63"
-            android:backgroundTint="#991D47"
-            android:text="@string/numbers_firefighters_info"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/ALL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7E57C2"
+                android:gravity="center"
+                android:text="Единый номер"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/ALL_INFO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/policeTEXTBOX"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100sp"
-            android:background="#0B6572"
-            android:backgroundTint="#009DB5"
-            android:text="@string/numbers_police"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/ALL_INFO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#7E57C2"
+                android:gravity="center"
+                android:text="112"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/firefightersTEXTBOX"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ALL"
+                tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/policeINFO"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="145sp"
-            android:background="#0B6572"
-            android:backgroundTint="#00B0CA"
-            android:text="@string/numbers_police_info"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/firefightersTEXTBOX"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#E91E63"
+                android:backgroundTint="#991D47"
+                android:gravity="center"
+                android:text="@string/numbers_firefighters"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/firefightersINFO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ALL_INFO" />
 
-        <TextView
-            android:id="@+id/medTEXTBOX"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="200sp"
-            android:background="#EF6C00"
-            android:backgroundTint="#C15B08"
-            android:text="@string/numbers_med"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/firefightersINFO"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#E91E63"
+                android:backgroundTint="#991D47"
+                android:gravity="center"
+                android:text="@string/numbers_firefighters_info"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/policeTEXTBOX"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firefightersTEXTBOX" />
 
-        <TextView
-            android:id="@+id/medINFO"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="245sp"
-            android:background="#EF6C00"
-            android:backgroundTint="#D06208"
-            android:text="@string/numbers_med_info"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-    </FrameLayout>
+            <TextView
+                android:id="@+id/policeTEXTBOX"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#0B6572"
+                android:backgroundTint="#009DB5"
+                android:gravity="center"
+                android:text="@string/numbers_police"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/policeINFO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firefightersINFO" />
 
+            <TextView
+                android:id="@+id/policeINFO"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#0B6572"
+                android:backgroundTint="#009DB5"
+                android:gravity="center"
+                android:text="@string/numbers_police_info"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/medTEXTBOX"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/policeTEXTBOX" />
+
+            <TextView
+                android:id="@+id/medTEXTBOX"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#EF6C00"
+                android:backgroundTint="#C15B08"
+                android:gravity="center"
+                android:text="@string/numbers_med"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/medINFO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/policeINFO" />
+
+            <TextView
+                android:id="@+id/medINFO"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#EF6C00"
+                android:backgroundTint="#C15B08"
+                android:gravity="center"
+                android:text="@string/numbers_med_info"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/medTEXTBOX" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

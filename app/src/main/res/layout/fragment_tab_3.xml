@@ -22,7 +22,7 @@
             android:text="@string/h4"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="26sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
 
@@ -39,8 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:paddingStart="30sp"
-                android:paddingEnd="10sp"
+                android:layout_marginHorizontal="35sp"
+                android:paddingVertical="5sp"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/h4_important"
                 android:textColor="@color/white"
@@ -52,8 +52,9 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="💡"
                 android:textColor="@color/white"
+                android:layout_marginHorizontal="5sp"
+                android:layout_marginTop="5sp"
                 android:textSize="22sp"
-                android:layout_marginStart="2sp"
                 tools:ignore="HardcodedText" />
         </androidx.cardview.widget.CardView>
 
