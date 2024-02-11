@@ -27,11 +27,21 @@ class HomeFragment : Fragment() {
             button1()
         }
 
+        val button2: CardView = view.findViewById(R.id.button_2)
+        button2.setOnClickListener {
+            button2()
+        }
+
+        val button3: CardView = view.findViewById(R.id.button_3)
+        button3.setOnClickListener {
+            button3()
+        }
+
         return view
     }
 
     private fun openFireFragment() {
-        val fireFrag = DefinitionsFragment()
+        val fireFrag = Button0Fragment()
 
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container, fireFrag)
@@ -44,7 +54,25 @@ class HomeFragment : Fragment() {
 
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container, openButton1)
-        transaction.addToBackStack(null) // Optional: Add the transaction to the back stack
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+    private fun button2() {
+        val openButton2 = Button2Fragment()
+
+        val transaction = requireActivity().supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container, openButton2)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+    private fun button3() {
+        val openButton3 = Button3Fragment()
+
+        val transaction = requireActivity().supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container, openButton3)
+        transaction.addToBackStack(null)
         transaction.commit()
     }
 }

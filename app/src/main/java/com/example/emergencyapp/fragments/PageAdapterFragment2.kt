@@ -5,19 +5,17 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class SimpleFragmentPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
+class SimpleFragmentPagerAdapter2(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
 
     override fun getItemCount(): Int {
-        return 4
+        return 2
     }
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> Tab1Fragment()
-            1 -> Tab2Fragment()
-            2 -> Tab3Fragment()
-            3 -> Tab4Fragment()
+            1 -> Tab1Fragment()
             else -> Tab1Fragment()
         }
     }

@@ -10,7 +10,7 @@ import com.example.emergencyapp.R
 import com.example.emergencyapp.ViewPagerAdapter
 import me.relex.circleindicator.CircleIndicator3
 
-class DefinitionsFragment : Fragment() {
+class Button0Fragment : Fragment() {
 
     private lateinit var titlesList: MutableList<String>
     private lateinit var descList: MutableList<String>
@@ -20,7 +20,7 @@ class DefinitionsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.fragment_definitions, container, false)
+        val rootView = inflater.inflate(R.layout.fragment_button0, container, false)
 
         // Initialize your lists and populate them
         titlesList = mutableListOf()
