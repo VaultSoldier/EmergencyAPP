@@ -4,12 +4,9 @@
     <string name="button_1">Чрезвычайные ситуации и их классификация</string>
     <string name="button_2">Оказание первой медицинской помощи больным и пострадавшим</string>
     <string name="button_3">Эвакуационная памятка</string>
-    <string name="numbers_firefighters">пожарные</string>
-    <string name="numbers_firefighters_info">101</string>
-    <string name="numbers_police">полиция</string>
-    <string name="numbers_police_info">102</string>
-    <string name="numbers_med">скорая помощь</string>
-    <string name="numbers_med_info">103</string>
+    <string name="numbers_firefighters">пожарные\n101</string>
+    <string name="numbers_police">полиция\n102</string>
+    <string name="numbers_med">скорая помощь\n102</string>
 
     <string name="h1">Чрезвычайные ситуации и их классификация</string>
     <string name="h1Text">Чрезвычайная ситуация — обстановка на определенной территории,
