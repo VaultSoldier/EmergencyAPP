@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.example.emergencyapp.R
@@ -32,12 +33,21 @@ class HomeFragment : Fragment() {
             button2()
         }
 
-        val button3: CardView = view.findViewById(R.id.button_3)
+        val button3: CardView = view.findViewById(R.id.SOS)
         button3.setOnClickListener {
             button3()
         }
 
         return view
+    }
+
+    private fun button3() {
+        val cardView: CardView = requireView().findViewById(R.id.SOS)
+        cardView.setOnClickListener { v: View ->
+            Toast.makeText(
+                requireContext(), "SOS ОТПРАВЛЕН!", Toast.LENGTH_SHORT
+            ).show()
+        }
     }
 
     private fun openFireFragment() {
@@ -63,15 +73,6 @@ class HomeFragment : Fragment() {
 
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container, openButton2)
-        transaction.addToBackStack(null)
-        transaction.commit()
-    }
-
-    private fun button3() {
-        val openButton3 = Button3Fragment()
-
-        val transaction = requireActivity().supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.container, openButton3)
         transaction.addToBackStack(null)
         transaction.commit()
     }
