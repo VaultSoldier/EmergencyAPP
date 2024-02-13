@@ -52,7 +52,7 @@ class HomeFragment : Fragment() {
                 // Handle the "No" button click
                 dialogInterface.dismiss()
                 // Add your logic for "No" button action here
-                Toast.makeText(requireContext(), "Вы нажали Нет", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Отмена", Toast.LENGTH_SHORT).show()
             }
             .setPositiveButton("Да") { dialogInterface: DialogInterface, _: Int ->
                 // Handle the "Yes" button click
