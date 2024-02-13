@@ -1,5 +1,7 @@
 package com.example.emergencyapp.fragments
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -35,19 +37,30 @@ class HomeFragment : Fragment() {
 
         val button3: CardView = view.findViewById(R.id.SOS)
         button3.setOnClickListener {
-            button3()
+            showConfirmationDialog()
         }
 
         return view
     }
 
-    private fun button3() {
-        val cardView: CardView = requireView().findViewById(R.id.SOS)
-        cardView.setOnClickListener { v: View ->
-            Toast.makeText(
-                requireContext(), "SOS ОТПРАВЛЕН!", Toast.LENGTH_SHORT
-            ).show()
-        }
+    private fun showConfirmationDialog() {
+        val builder = AlertDialog.Builder(requireContext())
+
+        builder.setTitle("Отправить SOS")
+            .setMessage("Вы уверены?")
+            .setNegativeButton("Нет") { dialogInterface: DialogInterface, _: Int ->
+                // Handle the "No" button click
+                dialogInterface.dismiss()
+                // Add your logic for "No" button action here
+                Toast.makeText(requireContext(), "Вы нажали Нет", Toast.LENGTH_SHORT).show()
+            }
+            .setPositiveButton("Да") { dialogInterface: DialogInterface, _: Int ->
+                // Handle the "Yes" button click
+                dialogInterface.dismiss()
+                // Add your logic for "Yes" button action here
+                Toast.makeText(requireContext(), "SOS! Отправлен", Toast.LENGTH_SHORT).show()
+            }
+            .show()
     }
 
     private fun openFireFragment() {

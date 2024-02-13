@@ -6,7 +6,7 @@
     <string name="button_3">Эвакуационная памятка</string>
     <string name="numbers_firefighters">пожарные\n101</string>
     <string name="numbers_police">полиция\n102</string>
-    <string name="numbers_med">скорая помощь\n102</string>
+    <string name="numbers_med">скорая\n102</string>
 
     <string name="h1">Чрезвычайные ситуации и их классификация</string>
     <string name="h1Text">Чрезвычайная ситуация — обстановка на определенной территории,
