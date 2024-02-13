@@ -17,4 +17,3 @@ local.properties
 /app/release/*
 /app/build
 /app/debug
-/app/release
