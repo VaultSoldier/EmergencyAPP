@@ -211,8 +211,6 @@
         в течение 30-40 минут и помощи нет, следует считать, что наступила
         биологическая смерть пострадавшего.
     </string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="butt_1_content">Памятка</string>
     <string name="butt_text_1">Выход здесь\n(левосторонний)</string>
     <string name="butt_text_2">Выход здесь\n(правосторонний)</string>
